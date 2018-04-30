@@ -1,0 +1,23 @@
+.full-width{
+	width: 100%;
+}
+
+.bg-cover{
+	background-size: cover;
+	background-position: center center;
+}
+
+.translateY	{
+	
+	
+	@media (min-width: $screen-xs-max) {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left:0;
+		right: 0;
+	}
+
+		
+	
+}

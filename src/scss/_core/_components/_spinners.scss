@@ -1,0 +1,44 @@
+/*doc
+---
+title: Spinners
+name: spinners
+category: Components Spinners
+---
+
+Circle
+
+```html_example
+<div class="loader loader--circle">Loading...</div>
+```
+*/ 
+.loader{
+		
+	//Loading circular	
+	&--circle {
+	  position: relative;
+	  text-indent: -9999em;
+	  transform: translateZ(0);
+	  animation: load8 1s infinite linear;
+	}
+	&--circle,
+	&--circle:after {
+	  border-radius: 50%;
+	}
+	@-webkit-keyframes load8 {
+	  0% {
+	    transform: rotate(0deg);
+	  }
+	  100% {
+	    transform: rotate(360deg);
+	  }
+	}
+	@keyframes load8 {
+	  0% {
+	    transform: rotate(0deg);
+	  }
+	  100% {
+	    transform: rotate(360deg);
+	  }
+	}
+		
+}

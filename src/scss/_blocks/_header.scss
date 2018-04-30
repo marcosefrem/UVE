@@ -1,0 +1,200 @@
+//Usar siempre la variable para darle altura en mobile para que no haya connflictos con el offcanvas.
+$mobileHeaderHeight:0px;
+
+$headerButtonHeight:68px;
+
+.header{
+	width: 100%;
+	z-index: $zindex8;
+	@extend .clearfix;
+	font-size: 14px;
+	//background: white;
+	transition:.5s;
+	height: 0;	
+	
+	.navbar-spy{
+	    position: fixed;
+	    right: 10px;
+	    height: 100vh;
+	    vertical-align: middle;
+	    display: flex;
+		.nav-tabs{
+			top:0;
+			bottom:0;
+			display: block;
+			margin: auto;
+		}
+		li{
+			margin-bottom: 8px;
+			display: block;
+		}
+		a{
+			display: block;
+			width: 4px;
+			height: 40px;
+			border-radius: 16px;
+			display: block;
+			padding: 0;
+			background: #C6DBE1;
+			border: 1px solid #C6DBE1;
+			&.active{
+				background: #97A8AC;
+				border: 1px solid #97A8AC;
+			}
+		}
+	}
+	
+	
+	.icon-logo{
+		width: 220px;
+		top:55px;
+		position: relative;
+		
+		svg{
+			width: 100%;
+		}
+		@media (max-width: $screen-sm-max) {
+			width: 110px;
+			top:0;
+
+		}			
+	}
+
+	p{
+		color:$color-white;
+		font-size: 2rem;
+		margin-top:65px;
+		@media (max-width: $screen-sm-max) {
+			font-size: 1.4rem;
+			margin-top: 35px;
+			float: right;
+		}		
+		a{
+			margin-left: 15px;
+			color:$color-white;
+			text-decoration: none;
+			@media (max-width: $screen-sm-max) {
+				margin-left: 5px;
+
+			}			
+			
+		}
+	}
+	//Variante
+	&--hero{
+		position: fixed;
+	}
+	
+	&__inner{
+		
+		padding-left: 3em;
+		padding-right: 3em;
+		@media (max-width: $screen-md-max) {
+			padding-left: .5em;
+			padding-right: .5em;
+		}
+		
+	}
+	
+
+	svg{
+		fill: white
+	}
+
+	@media (max-width: $screen-sm-max) {
+		height: $mobileHeaderHeight;
+	}		
+	
+	
+	a{
+		
+		
+	}
+	
+	.caret{
+		background-image: url($caret-white);
+	}
+	
+	&.sticky,
+	&.solid-bg{
+		box-shadow: 0px 2px 4px 0 rgba(0,0,0,.05);
+		.header__logo{
+			display: block;
+			max-width: 120px;
+			&--white{
+				display: none;
+			}
+			
+		}
+		
+		.caret{
+			background-image: url($caret);
+			border-top-color: $color-black
+		}
+		
+		
+		.link{
+			&--3, &--3:link, &--3:visited, &--3{
+				color: $color-black;
+				&:after{
+					background: $color-cerise-red;
+				}
+			}
+		}
+		
+		.header__right{
+			
+			.link{
+				&--1{
+					color: $color-cerise-red;
+					&:hover{
+						color: $color-black;
+					}
+					
+					&:focus{
+						
+					}
+				  
+				}
+				
+			}
+		}
+		
+			
+		
+		svg{
+			fill: $color-silver-var
+		}
+		
+	}
+	
+	&--search--open{
+		@extend .sticky;
+	}
+
+	&__right{
+		float: right;
+		display: inline-block;	
+		height: 50px;
+		padding-top: 5px;
+		@media (max-width: $screen-sm-max) {
+
+
+
+
+		}
+		.list{
+			margin-bottom: 0;
+			> li{
+				margin-bottom: 0;
+				margin-right: 1em;
+				&:last-child{ margin-right: 0 }
+			}
+		}
+		
+	}
+	
+
+
+	
+}

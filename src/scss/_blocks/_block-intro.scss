@@ -1,0 +1,27 @@
+.block-intro	{
+	position:absolute;
+	bottom:105px;
+	margin: auto;
+	max-width: 480px;
+	.h1{
+		color:$color-white;
+		font-size: 4.8rem;
+		font-family: helvetica, arial;
+		line-height: 6.4rem;
+		margin-bottom: 30px;
+		@media (max-width: $screen-xs-max) {
+			font-size: 3.1rem;
+			line-height: 3.7rem;
+		}
+
+	}
+	p{
+		font-family: helvetica, arial;
+		font-size: 2rem;
+		line-height: 2.4rem;
+		color:$color-white;
+		margin-bottom: 50px;
+	}
+	
+	
+}

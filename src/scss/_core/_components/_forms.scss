@@ -1,0 +1,444 @@
+/*doc
+---
+title: Forms
+name: forms
+category: Components Forms
+---
+
+Formularios horizontales, se pueden dar tamaños con cols
+
+```html_example
+<form class="form">
+	<div class="form__group">
+		<label for="input-text">Input text</label>
+		<input  type="text" class="form__control"  id="input-text" placeholder="Campo de texto">
+	</div>	
+	
+	<div class="form__group form__group--addon--right">
+		<label for="input-text-group">Input con addon</label>
+		<input  type="text" class="form__control"  id="input-text-group" placeholder="Campo de texto">
+		<button class="btn btn--1 addon">Go</button>
+		<button class="btn btn--1 addon">Go</button>
+	</div>			
+			
+	<div class="form__group">
+		<select class="form__select" role="listbox" name="" id="">
+		<option role="option" value="-1">Selecciona opción</option>
+			<option role="option" value="">Opción 1</option>
+			<option role="option" value="">Opción 2</option>
+			<option role="option" value="">Opción 3</option>
+		</select>
+	</div>	
+	<div class="form__group">
+		<textarea name="textarea" rows="4" cols="2" placeholder="Textarea"></textarea>
+	</div>	
+	<div class="form__group">
+		<div class="checkbox">
+			<input id="form-checkbox" name="p-1"  type="checkbox" value="">
+			<label for="form-checkbox">Checkbox</label>
+		</div>	
+	</div> 
+	<div class="form__group">
+		<div class="radio">
+			<input id="form-radio-1" name="form-radio"  type="radio" value="">
+			<label for="form-radio-1">Opción 1</label>
+		</div>	
+	</div> 
+	<div class="form__group">
+		<div class="radio">
+			<input id="form-radio-2" name="form-radio"  type="radio" value="">
+			<label for="form-radio-2">Opcion 2</label>
+		</div>	
+	</div> 
+	<div class="form__group">
+		<button class="btn btn--1 btn--block">Go</button>
+	</div>
+</form>						
+```
+Formularios inline
+
+```html_example
+<form class="form form--inline">
+	<div class="form__group">
+		<label for="input-text">Label</label>
+		<input  type="text" class="form__control"  id="input-text" placeholder="Campo de texto">
+		<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+		<div class="form__group__help with-errors"></div>	
+	</div>			
+	<div class="form__group">
+		<select class="form__select" role="listbox" name="" id="">
+			<option role="option" value="">Opción 1</option>
+			<option role="option" value="">Opción 2</option>
+			<option role="option" value="">Opción 3</option>
+		</select>
+	</div>	
+	<div class="form__group">
+		<div class="checkbox">
+			<input id="form-checkbox-inline" name="p-1"  type="checkbox" value="">
+			<label for="form-checkbox-inline">Checkbox</label>
+		</div>	
+	</div> 
+	<div class="form__group">
+		<div class="radio">
+			<input id="form-radio-1-inline" name="form-radio"  type="radio" value="">
+			<label for="form-radio-1-inline">Opción 1</label>
+		</div>	
+	</div> 
+	<div class="form__group">
+		<div class="radio">
+			<input id="form-radio-2-inline" name="form-radio"  type="radio" value="">
+			<label for="form-radio-2-inline">Opcion 2</label>
+		</div>	
+	</div> 
+	<div class="form__group">
+		<button class="btn btn--1 btn--block">Go</button>
+	</div>
+</form>						
+```
+
+Tamaño XS
+
+```html_example
+
+<form class="form form--xs">
+	<div class="form__group">
+		<label for="input-text">Label</label>
+		<input  type="text" class="form__control"  id="input-text" placeholder="Campo de texto">
+	</div>			
+</form>
+```
+
+Tamaño SM
+
+```html_example
+<form class="form form--sm">
+	<div class="form__group">
+		<label for="input-text">Label</label>
+		<input  type="text" class="form__control"  id="input-text" placeholder="Campo de texto">
+	</div>			
+</form>
+```
+
+Tamaño LG
+
+```html_example
+<form class="form form--lg">
+	<div class="form__group">
+		<label for="input-text">Label</label>
+		<input  type="text" class="form__control"  id="input-text" placeholder="Campo de texto">
+	</div>			
+</form>
+```
+
+
+Validaciones
+
+```html_example
+<form class="form">
+
+	<div class="form__group form__group--danger">
+		<label for="input-text">Mensaje de error</label>
+		<input required data-validation-required-message="Campo requerido" type="text" class="form__control"  id="input-text" placeholder="Campo de texto">
+		
+		<span class="form__icon" aria-hidden="true">
+			<svg class="icon" role="presentation">
+			    <use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#validation-ko"></use>
+			</svg>			
+		</span>
+		
+		<div class="form__group__help">
+			<ul>
+				<li>Mensaje Error</li>
+			</ul>
+		</div>	
+	</div>	
+
+	<div class="form__group form__group--warning">
+		<label for="input-text">Mensaje de aviso</label>
+		<input  type="text" class="form__control"  id="input-text" placeholder="Campo de texto">
+		<span class="form__icon" aria-hidden="true">
+			<svg class="icon" role="presentation">
+			    <use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#validation-ko"></use>
+			</svg>			
+		</span>
+		<div class="form__group__help">
+			<ul>
+				<li>Mensaje Error</li>
+			</ul>
+		</div>	
+	</div>	
+
+	<div class="form__group form__group--success">
+		<label for="input-text">Mensaje de éxito</label>
+		<input  type="text" class="form__control"  id="input-text" placeholder="Campo de texto">
+		<span class="form__icon" aria-hidden="true">
+			<svg class="icon" role="presentation">
+			    <use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#validation-ok"></use>
+			</svg>			
+		</span>
+		<div class="form__group__help">
+			<ul>
+				<li>Mensaje Error</li>
+			</ul>
+		</div>	
+	</div>	
+
+</form>						
+```
+
+
+*/ 
+
+@import "../../_components-custom/_site-vars.scss";
+
+
+
+
+// -------------------------------------------------- 
+//	Select
+// --------------------------------------------------
+
+.form{
+	
+	input,
+	select,
+	.btn{
+		height: $input-height*1px;
+		font-family: inherit;
+		font-size: 14px;
+		letter-spacing: 0;
+		
+		&.btn--sm{
+			@extend .btn--sm;
+			letter-spacing: 0.16rem;
+		}
+	}	
+	.btn{
+		font-size: 12px;
+	}
+	&__group{
+		position: relative;		
+		//Cortamos el margen en el último elemento
+		&:last-child:not(:only-child){
+			margin-bottom: 0;
+		}
+	}		
+	
+	.form__group--addon--left{
+		position: relative;
+		.addon{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+	}
+
+
+	.form__group--step-info{
+		float: left;
+		padding-top: 15px;
+	}
+
+	.form__group--addon--right{
+		position: relative;
+		.addon{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			
+		}
+	}
+
+	&__control,
+	select,
+	textarea{
+		width: 100%;
+		font-size: inherit;
+		margin: 0;
+	}
+	
+	select{
+		font-size: 14px;
+		color:$color-black-50;
+	}
+
+	
+	//Quitamos el margin si el label está dentro de columnas
+	//[class*="col-"] label{
+	//	margin-bottom: 0;
+	//}
+	
+	
+	// -------------------------------------------------- 
+	//	Formulario inline
+	// --------------------------------------------------
+	
+	&--inline{
+		
+		.form__group{
+			
+			margin-top: 0;
+			display: inline-block;
+			vertical-align: top;
+			
+			
+			//Les damos estilo en XS
+			@media (max-width: $screen-xs-max) {
+				
+				width: 100%;
+				display: block;
+				
+			}
+			
+			label{
+				@media (max-width: $screen-xs-max) {
+					display: block;
+				}
+			}
+			
+		}
+		
+		.form__control{
+			width: auto;
+			//Les damos estilo en XS
+			@media (max-width: $screen-xs-max) {
+				width: 100%;
+			}
+			
+			
+		}
+		
+		
+	}
+	
+	//icono validaciones
+	.form__icon  svg{
+		position: absolute;
+		right: 0;
+		width: $input-height*1px;
+		height: $input-height*1px;
+	}
+	
+	
+	// -------------------------------------------------- 
+	//	Tamaños
+	// --------------------------------------------------
+	
+	
+	&--xs{
+		.form__control, .btn{
+			height: $input-height-xs*1px;
+		}
+		
+		.form__icon  svg{
+			width: $input-height-xs*1px;
+			height: $input-height-xs*1px;
+		}
+		
+	}
+	
+	&--sm{
+		.form__control, .btn{
+			height: $input-height-sm*1px;
+		}
+		
+		.form__icon  svg{
+			width: $input-height-sm*1px;
+			height: $input-height-sm*1px;
+		}
+		
+		
+	}
+	
+	&--lg{
+		.form__control, .btn{
+			height: $input-height-lg*1px;
+		}
+		
+		.form__icon  svg{
+			width: $input-height-lg*1px;
+			height: $input-height-lg*1px;
+		}
+
+	}
+	
+}
+
+
+// -------------------------------------------------- 
+//	Checkbox
+// --------------------------------------------------
+
+//.checkbox{
+//	
+//	input{ display: none }
+//	
+//	// Unchecked
+//	label{
+//		position: relative;
+//		&:before{
+//			position: absolute;
+//			left: 0;
+//			content: '';
+//			display: inline-block;
+//		}
+//	}
+//	
+//	
+//	//Checked
+//	input:checked + label{
+//		&:before{
+//
+//		}
+//		
+//	}
+//	
+//}
+
+// -------------------------------------------------- 
+//	Radio
+// --------------------------------------------------
+
+.radio,
+.checkbox{
+	user-select: none;
+	cursor: pointer;
+	input{ display: none }
+	
+	// Unchecked
+	label{
+		position: relative;
+		&:before{
+			position: absolute;
+			content: '';
+			display: inline-block;
+			box-sizing: border-box;
+			
+		}
+		&:after{
+			position: absolute;
+			content: '';
+			display: inline-block;
+			border-radius: 100%;	
+			opacity: 0;	
+			box-sizing: border-box;
+			
+		}
+		
+	}
+	
+	
+	//Checked
+	input:checked + label{
+		&:before{
+
+		}
+		&:after{
+			opacity: 1;
+		}
+		
+		
+	}
+	
+}
+

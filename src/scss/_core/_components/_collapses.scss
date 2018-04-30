@@ -1,0 +1,8 @@
+.collapse{
+	overflow: hidden;
+	max-height: 0;
+  	&--in{
+		display: block;	
+		max-height: 2000px;
+	}
+}

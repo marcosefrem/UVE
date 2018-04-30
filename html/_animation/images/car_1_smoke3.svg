@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="17px" viewBox="0 0 23 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>car smoke3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.545,0 C14.585,0 13.67,0.196 12.839,0.551 C12.256,0.222 11.595,0.02 10.879,0.02 C8.874,0.02 7.226,1.496 6.928,3.418 C6.412,3.235 5.864,3.117 5.286,3.117 C2.54,3.117 0.313,5.344 0.313,8.09 C0.313,10.683 2.305,12.788 4.838,13.017 C5.741,15.006 7.739,16.392 10.066,16.392 C12.074,16.392 13.839,15.36 14.866,13.798 C15.089,13.82 15.315,13.833 15.545,13.833 C19.364,13.833 22.461,10.736 22.461,6.916 C22.461,3.097 19.364,0 15.545,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="car-smoke3">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <polygon id="Fill-1" fill="#25315C" mask="url(#mask-2)" points="-4.687 21.392 27.461 21.392 27.461 -5 -4.687 -5"></polygon>
+        </g>
+    </g>
+</svg>

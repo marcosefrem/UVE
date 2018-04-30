@@ -1,0 +1,82 @@
+/*doc
+---
+title: Block Example
+name: block-example
+category: Blocks
+---
+
+Descripción bloque y su uso si tiene algún modificador, JS, etc
+
+```html_example
+
+HTML
+
+```
+
+```
+
+Código include
+
+
+```
+
+*/ 
+
+
+.block-icons{
+	[class*="icon-"]{
+		position: absolute;
+		svg{
+			width: 100px;
+			height: auto;
+			@media (max-width: $screen-xs-max) {
+				width: 70px;
+			}
+		}
+
+	}
+	.icon-bike{
+		left: 10%;
+		top:30%;
+		@media (max-width: $screen-xs-max) {
+			left: 10%;
+			top:30%;
+		}	
+		
+	}
+	.icon-drone{
+		left: 25%;
+		top:10%;		
+	}
+	.icon-dress{
+		left: 45%;
+		top:40%;		
+	}
+	.icon-investment{
+		left: 45%;
+		top:5%;		
+	}
+	.icon-cloud{
+		left: 70%;
+		top:30%;		
+	}
+	.icon-mansion{
+		left: 70%;
+		top:70%;		
+	}
+	.icon-camera{
+		left: 80%;
+		top:7%;		
+	}
+	.icon-castle{
+		left: 95%;
+		top:40%;		
+	}
+	.icon-rocket{
+		left: 90%;
+		top:80%;	
+		width: 90px;
+		
+	}
+	
+}

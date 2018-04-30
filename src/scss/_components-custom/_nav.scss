@@ -1,0 +1,23 @@
+.nav-tabs {
+	.nav-link{
+		border: 0;
+		position: relative;
+	}
+	.nav-item	{
+		margin-bottom: 0;
+		text-align: center;
+		position: relative;
+
+	}
+	a{
+		color:#dee2e6;
+		position: relative;
+		text-align: center;
+		
+		transition: all .4s ease;
+		&:hover{
+			color:#495057;
+			}		
+		
+	}
+}

@@ -1,0 +1,101 @@
+/*doc
+---
+title: Dropdowns
+name: dropdowns
+category: Components Dropdowns
+---
+
+<ul class="dropdown--menu" role="menu" aria-labelledby="" style="opacity:1; position:relative; max-height:400px; width:200px; margin: 20px;">
+    <li role="presentation" class="dropdown-header">Dropdown header</li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+</ul>
+
+
+```html_example
+
+<div class="dropdown">
+	<button class="btn btn--1" type="button" id="dropdown" data-toggle="dropdown" aria-expanded="false">
+		Dropdown
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown--menu" role="menu" aria-labelledby="dropdown">
+		<li role="presentation" class="dropdown-header">Dropdown header</li>
+		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+		<li role="presentation" class="divider"></li>
+		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+	</ul>
+</div>	
+
+
+
+```
+*/ 
+.caret{	
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px dashed;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent
+	
+}
+
+
+.dropdown,
+.dropup{
+	position: relative;
+	padding: 0;
+	&--menu{
+		width: auto;
+	//	display: none;
+		position: absolute;
+		left: 0;
+	}	
+	
+	&.open{
+		.caret{
+			transform: rotate(180deg);
+		}
+	}
+	
+}
+
+
+.dropdown,
+.dropup,
+{
+	
+	&.open &--menu{
+	//	display: block;
+		
+		z-index: $zindex1;
+	}	
+	
+}
+
+//	--------------------------------------------------
+//	Dropups
+//  --------------------------------------------------
+
+.dropup.open{
+	
+	.dropdown--menu{
+		bottom: 100%;
+	}	
+	
+}
+
+
+.dropup{
+	.caret{
+		transform: rotate(180deg);		
+	}
+}

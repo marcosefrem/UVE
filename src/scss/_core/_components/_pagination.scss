@@ -1,0 +1,48 @@
+/*doc
+---
+title: Pagination
+name: pagination
+category: Components Pagination
+---
+
+```html_example
+
+<nav class="pagination">
+	<ul>
+		<li>
+			<a href="#" aria-label="Previous">
+				<span aria-hidden="true">
+				
+					<svg viewBox="0 0 64 64" width="" class="icon icon--xxs" role="presentation">
+					    <use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#arrow_left"></use>
+					</svg>
+			
+				
+				</span>
+			</a>
+		</li>
+
+		<li>
+			<a class="active" href="#">1</a>
+		</li>
+
+		<li>
+			<a href="#">2</a>
+		</li>
+
+		<li>
+			<a href="#" aria-label="Next">
+				<span aria-hidden="true">
+				
+					<svg viewBox="0 0 64 64" width="" class="icon icon--xxs" role="presentation">
+					    <use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#arrow_right"></use>
+					</svg>
+				
+				</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+
+```
+*/ 

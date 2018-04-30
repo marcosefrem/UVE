@@ -1,0 +1,104 @@
+/*doc
+---
+title: Buttons
+name: buttons
+category: Components Buttons
+---
+
+Colores
+
+<style>
+
+	.exampleOutput{ background: #efefef } 
+
+</style>
+
+```html_example
+
+
+<button type="button" class="btn btn--1">Boton primario</button>
+<button type="button" class="btn btn--2">Boton secundario</button>
+<button type="button" class="btn btn--3">Boton terciario</button>
+
+<br><br>
+
+<button type="button" class="btn btn--1 btn--sm">Boton primario SM</button>
+<button type="button" class="btn btn--2 btn--sm">Boton secundario SM</button>
+<button type="button" class="btn btn--3 btn--sm">Boton terciario SM</button>
+
+<br><br>
+
+<div class="bg-color-cerise-red" style="padding:20px">
+	<button type="button" class="btn btn--1--trans">Boton secundario Trans</button>
+	<button type="button" class="btn btn--1--trans btn--sm">Boton secundario SM Trans</button>
+	<button type="button" class="btn btn--1--trans btn--sm">Boton primario SM Trans</button>
+</div>
+
+<br><br>
+
+<div class="bg-color-dodger-blue" style="padding:20px">
+	<button type="button" class="btn btn--2--trans">Boton secundario Trans</button>
+	<button type="button" class="btn btn--2--trans btn--sm">Boton secundario SM Trans</button>
+	
+</div>
+
+<br><br>
+
+<div class="bg-color-ebony-clay" style="padding:20px">
+	<button type="button" class="btn btn--4">Boton cuarto</button>
+	
+</div>
+
+	<button type="button" class="btn btn--5">Boton quinto</button>
+
+```
+*/
+
+
+
+.form-inline {
+	label{
+		padding-left: 30px;
+		margin-left: -15px;
+	}
+}
+
+
+/************
+	
+	Radios
+*****************/
+
+
+
+.custom-radio{
+	.custom-control-input{
+		~ .custom-control-label::before{
+			width: 1.8rem;
+			height: 1.8rem;
+			background-color: $color-white;
+			border:1px solid #69716E;	
+			top:0;		
+		}
+
+		&:checked{
+			~ .custom-control-label::before{
+				background-color: $color-white;
+				
+			}
+			~ .custom-control-label::after{
+			    background-size: 15px;
+			    background: none;
+			    left: 4px;
+			    top: 4px;
+			    background-color: #69716E;
+			    border-radius: 50%;
+			    width: 10px;
+			    height: 10px;
+			}		
+		}
+	}
+
+}
+
+

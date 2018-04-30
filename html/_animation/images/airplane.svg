@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="791px" height="473px" viewBox="0 0 791 473" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>airplane</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M401.7637,274.9232 L653.7289,329.2754 L680.604,413.32524 L734.9908,427.16458 L744.5386,313.7771 L790.3452,209.6091 L735.9556,195.7726 L672.1795,256.7607 L410.4533,178.5721 L476.6978,17.2812 L401.8127,0 L254.9026,131.3887 L98.95445,81.9588 C63.2458,72.8718 9.852745,90.7549 1.229442,124.652 C-7.396742,158.549 30.95593,199.779 66.66747,208.8631 L227.2268,240.165 L373.4687,452.24244 L455.0531,473 L401.7637,274.9232 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="airplane">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <polygon id="Fill-1" fill="#CA3DFF" mask="url(#mask-2)" points="-5 478 795.3452 478 795.3452 -5 -5 -5"></polygon>
+        </g>
+    </g>
+</svg>

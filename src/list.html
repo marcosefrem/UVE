@@ -1,0 +1,47 @@
+{{= it.include("core/html-start.html") }}
+    
+    {{= it.include("blocks/off-canvas.html") }}
+    {{= it.include("blocks/off-canvas-right.html") }}
+    	
+    	{{= it.include("blocks/header.html") }}
+
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public" role="main">
+		    <div class="margin-b-30">
+		   {{= it.include("blocks/slider-hero.html", {
+		    	"class" : "heroslider",
+		    	"link" : ""    			    	
+	    	}) }}			
+		    </div>
+			<div class="container">
+		
+				<div class="row">
+					
+					<div class="col-sm-12 box">
+						
+					   {{= it.include("blocks/slider-hero-nav.html", {
+					    	"class" : "hero",
+					    	"link" : ""    			    	
+				    	}) }}							
+					</div>
+					
+					
+				</div>
+				
+				
+				
+				
+				
+			</div>
+		
+			
+			
+	    </main>	
+	    
+	    
+    {{= it.include("blocks/footer.html") }}
+    
+    {{= it.include("core/plugins.js.html") }}
+	    
+{{= it.include("core/html-end.html") }}

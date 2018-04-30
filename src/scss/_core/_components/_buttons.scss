@@ -1,0 +1,187 @@
+/*doc
+---
+name: buttons-colors
+parent: buttons
+---
+
+Tamaños de botones
+
+```html_example
+<button type="button" class="btn btn--1 btn--xs">Extra Small</button>
+<button type="button" class="btn btn--1 btn--sm">Small</button>
+<button type="button" class="btn btn--1 btn--lg">Grande</button>
+```
+
+Button groups
+
+```html_example
+<div class="btn-group">		
+	<button class="btn btn--1">Botón</button>
+	<button class="btn btn--2">Botón</button>
+	<button class="btn btn--1">Botón</button>		
+</div>
+```
+
+Switch
+
+```html_example
+
+<div class="btn-switch">
+    <input type="checkbox" name="switch" class="btn-switch__checkbox" id="switch" checked>
+    <label class="btn-switch__label" for="switch"></label>
+</div>
+
+```
+
+Toggle radio
+
+```html_example
+<div class="btn-group" data-toggle="buttons">
+	<input id="radio-group-1" name="radio-group" type="radio" autocomplete="off" checked> 
+	<label for="radio-group-1" class="btn btn--1 active">Radio 1 (pre-checked)</label>
+	
+	<input id="radio-group-2" name="radio-group" type="radio" autocomplete="off"> 
+	<label for="radio-group-2" class="btn btn--1 active">Radio 2</label>
+</div>
+```
+
+
+Toggle checkbox
+
+```html_example
+<div class="btn-group" data-toggle="buttons">
+	<input id="check-group-1" name="check-group" type="checkbox" autocomplete="off" checked> 
+	<label for="check-group-1" class="btn btn--1 active">Check 1 (pre-checked)</label>
+	
+	<input id="check-group-2" name="check-group" type="checkbox" autocomplete="off"> 
+	<label for="check-group-2" class="btn btn--1 active">Check 2</label>
+</div>
+
+```
+*/ 
+button{
+	cursor: pointer;
+}
+
+.btn {
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0;
+	height: auto;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	vertical-align: top;
+	&__close{
+		
+		background: none;
+		position: relative;
+		border:0;
+		color:$color-silver;
+		&.xs{
+			font-size: 20px;
+			font-weight: 100;
+			position: relative;
+			top:2px;
+		}
+	}
+	
+	
+	&::hover {
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&--block{
+		display: block;
+		width: 100%;
+		text-align: center;
+		&--xs{
+			@media (min-width: $screen-xs) and (max-width:$screen-xs-max) {
+				display: block; width: 100%; text-align: center;
+			}
+		}
+		&--sm{
+			@media (min-width: $screen-sm) and (max-width:$screen-sm-max) {
+				display: block; width: 100%; text-align: center;
+			}
+		}
+		&--md{
+			@media (min-width: $screen-md) and (max-width:$screen-md-max) {
+				display: block; width: 100%; text-align: center;
+			}
+		}
+		&--lg{
+			@media (min-width: $screen-lg) and (max-width:$screen-lg-max) {
+				display: block; width: 100%; text-align: center;
+			}
+		}
+		&--xl{
+			@media (min-width: $screen-xl){
+				display: block; width: 100%; text-align: center;
+			}
+		}
+
+	}
+	  
+}
+
+// Reset para botones con aspecto de link
+button[class*="link--"] {
+	border: none;
+	background: none;
+	padding: 0;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+//	--------------------------------------------------
+//	Button Groups
+//  --------------------------------------------------
+
+.btn-group{
+	@include clearfix;
+	
+	//Ocultamos input cuando son Toggles
+	input{ display: none }
+	
+	.btn{
+		margin: 0;
+		float: left;
+		
+		+ .btn{
+			border-left: 0;
+		}
+	}
+}
+
+//	--------------------------------------------------
+//	Switch
+//  --------------------------------------------------
+
+.btn-switch {
+    position: relative;
+    user-select: none;
+	&__checkbox {
+	    display: none;
+	}
+	&__label {
+	    display: block;
+	    overflow: hidden;
+	    cursor: pointer;
+	}
+	&__label:before {
+	    content: "";
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    right: 22px;
+	}
+	&__checkbox:checked + &__label:before {
+	    right: 0px; 
+	}
+}

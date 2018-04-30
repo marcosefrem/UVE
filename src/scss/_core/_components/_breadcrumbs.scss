@@ -1,0 +1,45 @@
+/*doc
+---
+title: Breadcrumbs
+name: breadcrumbs
+category: Components Breadcrumbs
+---
+
+
+```html_example
+
+<nav role="navigation">
+	<ol class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+		<li><a href="#" itemprop="url"><span itemprop="title">Home</span></a></li>
+		<li><a href="#" itemprop="url"><span itemprop="title">Library</span></a></li>
+		<li class="breadcrumb__active"><span itemprop="title">Data</span></li>
+	</ol>
+</nav>
+
+```
+*/ 
+
+.breadcrumb{
+	li{
+		display: inline-block;
+		&:after{
+
+		}
+		
+		a{
+			
+		}
+		
+		
+		
+	}
+	&__active{
+		
+		&:after{
+
+		}
+		
+		
+	}
+	
+}

@@ -1,0 +1,68 @@
+/*doc
+---
+title: Popovers
+name: popovers
+category: Components Popovers
+---
+
+
+```html_example
+
+	<span class="popover">
+	
+		Ver popover
+		
+		<div class="popover__text">
+		
+			Contenido HTML popover
+			
+		</div>
+	
+	</span>
+
+```
+*/ 
+
+.popover {
+	cursor: help;
+	position: relative;
+	transform: translateZ(0); /* webkit flicker fix */
+	-webkit-font-smoothing: antialiased; /* webkit text rendering fix */	
+}
+
+//popover
+.popover {
+	
+	&__text {
+	display: block;	
+	opacity: 0;
+	bottom: 100%;	
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	box-sizing: content-box;
+	
+		//Piquito
+		&:after {
+			bottom: -10px;
+			content: " ";
+			height: 0;
+			left: 50%;
+			margin-left: -13px;
+			position: absolute;
+			width: 0;
+		 }
+
+		 
+	}
+	
+	&:hover &__text,
+	{
+		transform: translateY(0px);
+		
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+          
+}

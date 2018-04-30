@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="410px" height="182px" viewBox="0 0 410 182" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>car</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M390.392,68.986 C369.246,65.733 326.953,59.227 326.953,59.227 L287.914,10.427 C284.462,5.323 279.593,0.668 273.274,0.668 L102.478,0.668 C96.322,0.668 92.312,5.457 87.838,10.427 L43.92,59.227 L19.519,59.227 C8.602,59.227 0,67.786 0,78.746 L0,127.545 C0,138.505 8.602,147.065 19.519,147.065 L60.168,147.065 C65.265,166.72 83.051,181.296 104.298,181.296 C125.545,181.296 143.331,166.72 148.428,147.065 L262.799,147.065 C267.897,166.72 285.683,181.296 306.929,181.296 C328.176,181.296 345.962,166.72 351.06,147.065 L390.392,147.065 C401.309,147.065 409.912,138.505 409.912,127.545 L409.912,88.506 C409.912,77.546 401.184,70.647 390.392,68.986 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="car">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <polygon id="Fill-1" fill="#9013FE" mask="url(#mask-2)" points="-5 186.296 414.912 186.296 414.912 -4.332 -5 -4.332"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,96 @@
+/*doc
+---
+title: Hero Video
+name: block-hero-video
+category: Blocks Hero-Video
+---
+
+<style>
+
+.exampleOutput{ padding:0 }
+
+</style>
+
+
+```html_example
+
+<div class="hero-video @@class"
+	
+	data-background="@@img"
+	data-background-2x="@@img2x"	
+	
+	
+>
+	<div class="container">
+		<div class="hero-video__poster">
+		
+			<div class="hero-video__title">
+				<span class="h1-display">@@1.text</span>
+				
+				<p>@@2.text</p>		
+				
+				<button type="button" class="hero-video__button"></button>	
+			</div>
+			
+			
+		</div>	
+		
+	</div>
+	
+	<div class="hero-video__player" style="display: none">
+		
+		<video id="video" controls>
+			<source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+			<source src="http://techslides.com/demos/sample-videos/small.ogg" type="video/ogg">
+		</video>
+		
+	</div>
+	
+	
+</div>
+
+
+```
+
+*/ 
+
+
+.hero-slider{
+
+	position: relative;
+	margin-top: -95px;
+	width: 100%;
+	
+	.item{
+		min-height: 100vh;
+		position: relative;
+	}
+	.container{
+		left: 0;
+		right: 0;
+		display: block;
+		margin: auto;
+		.h1{
+			font-size: 6rem;
+
+	
+			  font-weight: bold;
+			  font-style: normal;
+			  font-stretch: normal;
+			  line-height: 1;
+			  letter-spacing: -2px;
+			  text-align: left;
+			  color: #ffffff;
+			  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.81);
+			
+			
+			
+		}
+		
+	}
+}
+
+
+
+
+

@@ -1,0 +1,121 @@
+{{= it.include("uikit/html-start.html") }}
+    	<header class="style-guide">
+	    	<div class="container">
+		    	<div class="row">
+			    	<div class="col-sm-12">
+			    		
+						<img src="img/guide/logo-raddison.png" class="logo" alt="" />	
+						
+			    	</div>    	
+		    	</div>
+	    	</div>
+    	</header>
+ 
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public" role="main">
+		  
+		  
+		  
+		  <div class="container fixedsticky">
+			  <div class="row">
+				  <div class="col-sm-12">
+					  
+		  
+					<ul class="nav nav-tabs mb-50 bg-white"  role="tablist">
+					  <li class="nav-item">
+					    <a class="nav-link active" href="#blocks" role="tab" data-toggle="tab">Blocks</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#text" role="tab" data-toggle="tab">Texts</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#icons" role="tab" data-toggle="tab">Icons</a>
+					  </li>
+					</ul>
+					
+				  </div>
+			  </div>
+			  
+			  
+		  </div>
+					
+					
+					
+					
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane in active" id="blocks">
+					
+					
+					<!-- slider special -->
+					<div class="fluid-container">
+						
+						<h2 class="h2 title">Block slider special</h2>
+					
+					   {{= it.include("blocks/slider-hero-nav.html", {
+					    	"class" : "hero",
+					    	"link" : ""    			    	
+				    	}) }}								
+					
+					
+					</div>	<!-- / slider special -->
+					
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="text">
+					
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">Texts</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								
+								
+								
+							</div>
+						</div>						
+						
+					</div>
+					
+					
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="icons">
+					
+						
+					
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">Icons</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								
+								<span class="svg-car"></span>
+								<span class="icon-car"></span>
+								<span class="icon-big-arrow-right"></span>
+										
+
+								
+							</div>
+						</div>							
+						
+						
+					</div>								
+									
+										
+				</div>
+			</div>
+		  
+		  
+		  
+		  
+		
+			
+			
+	    </main>	
+	    
+	        
+    {{= it.include("core/plugins.js.html") }}
+	    
+{{= it.include("core/html-end.html") }}

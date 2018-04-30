@@ -1,0 +1,8 @@
+Animación creada con Bodymovin.
+Más información en:
+
+https://github.com/airbnb/lottie-web
+airbnb.io/lottie
+
+
+IMPORTANTE: redireccionar el código a las imágenes en SVG que tienen más calidad y pesan menos por lo que evita que se atasque el movimiento

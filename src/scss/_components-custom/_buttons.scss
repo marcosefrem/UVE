@@ -1,0 +1,435 @@
+/*doc
+---
+title: Buttons
+name: buttons
+category: Components Buttons
+---
+
+Colores
+
+<style>
+
+	.exampleOutput{ background: #efefef } 
+
+</style>
+
+```html_example
+
+
+<button type="button" class="btn btn--1">Boton primario</button>
+<button type="button" class="btn btn--2">Boton secundario</button>
+<button type="button" class="btn btn--3">Boton terciario</button>
+
+<br><br>
+
+<button type="button" class="btn btn--1 btn--sm">Boton primario SM</button>
+<button type="button" class="btn btn--2 btn--sm">Boton secundario SM</button>
+<button type="button" class="btn btn--3 btn--sm">Boton terciario SM</button>
+
+<br><br>
+
+<div class="bg-color-cerise-red" style="padding:20px">
+	<button type="button" class="btn btn--1--trans">Boton secundario Trans</button>
+	<button type="button" class="btn btn--1--trans btn--sm">Boton secundario SM Trans</button>
+	<button type="button" class="btn btn--1--trans btn--sm">Boton primario SM Trans</button>
+</div>
+
+<br><br>
+
+<div class="bg-color-dodger-blue" style="padding:20px">
+	<button type="button" class="btn btn--2--trans">Boton secundario Trans</button>
+	<button type="button" class="btn btn--2--trans btn--sm">Boton secundario SM Trans</button>
+	
+</div>
+
+<br><br>
+
+<div class="bg-color-ebony-clay" style="padding:20px">
+	<button type="button" class="btn btn--4">Boton cuarto</button>
+	
+</div>
+
+	<button type="button" class="btn btn--5">Boton quinto</button>
+
+```
+*/
+
+
+.btn {
+	//No dar colores aqui, definirlos más abajo con btn--1!!!
+	font-size: 1.4rem;
+	padding: 10px 25px;
+	border:0;
+	background: transparent;
+	//height: $input-height*1px;
+	text-transform: none;
+	letter-spacing: 0.16rem; 
+	transition:.2s;
+	border-radius: 50px;
+	
+	&.lg{
+		padding-left: 50px;
+		padding-right: 50px;
+		height: 55px;
+		line-height: 35px;
+		font-size: 2rem;
+			
+		@media (max-width: $screen-xs-max) {
+			font-size: 1.4rem;
+		}
+  
+	}	 	
+	
+	&:hover{
+		transition:.2s;
+	}
+	&:focus{
+		transition:.2s;
+	}
+	& + .btn{
+		margin-left: 30px;
+	}
+	//Separación entre botones juntos en XS
+	&--block + .btn--block{
+		@media (min-width: $screen-xs) and (max-width:$screen-sm-max) {
+			margin-top: 10px;
+		}		
+	}
+	
+  &--primary{
+ 
+	  
+	  &_white{
+		  background: $color-white;
+		  color:$color-orange;
+		  
+		  &:hover{
+			  background: $color-orange;
+			  color:$color-white;			  
+		  }
+	  }
+	  &_green{
+	  		background: $color-green2;
+		  color:$color-white;
+		  &:hover{
+			  background: $color-green2;
+			  color:$color-white;			  
+		  }		  
+		  
+		  
+	  }
+  }
+  
+	&--transparent{
+		&__white{
+			 border: solid 1px #ffffff;
+			 color:#fff;
+			 
+			 &:hover{
+				 color:#fff;
+				 background: rgba(255,255,255,0.3); 
+			 }
+		}
+		border-radius: 4px;
+	}
+  
+	//Variantes de colores
+	&--1{
+		color: white;
+		background: $color-cerise-red;
+		border:2px solid $color-cerise-red;
+		
+		
+		
+		&:hover{
+			background: transparent;
+			color: $color-cerise-red;
+		}
+		
+		&:focus{
+			
+		}
+	  
+	}
+	
+	&--2{
+		color: white;
+		background: $color-dodger-blue;
+		border:2px solid $color-dodger-blue;
+		
+		
+		
+		&:hover{
+			background: transparent;
+			color: $color-dodger-blue;
+		}
+		
+		&:focus{
+			
+		}
+	  
+	}
+	
+	&--3{
+		color: $color-cerise-red;
+		background: transparent;
+		border-width:2px;
+		text-transform: uppercase;
+		
+		
+		&:hover{
+			color: $color-text;
+		}
+		
+		&:focus{
+			
+		}
+	  
+	}
+	
+	&--4{
+		color: $color-text;
+		background: $color-limed-spruce-25;
+		border:1px solid $color-text-25;
+		text-transform: capitalize;
+		
+		
+		&:hover{
+			color: white;
+			border-color: $color-cerise-red
+		}
+		
+		&:focus{
+			
+		}
+	  
+	}
+	
+	
+	&--5{
+		color: $color-black;
+		background: white;
+		border: 1px solid $color-mercury;
+		text-transform: capitalize;
+		text-align: center;
+		box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.09);
+		padding: 20px;
+		height: auto;
+		border-radius: 0;
+		font-size: 1.4rem;
+
+		@media (max-width: $screen-xs-max) {
+			padding: 5px;
+		}
+		//	transition:0s;
+		
+		.icon{
+			
+			vertical-align: middle;
+			
+		}
+		&.btn-full{
+			width: 100%;
+		}
+		
+		&:hover{
+			//color: white;
+			border-color: $color-cerise-red;
+			color: $color-cerise-red;
+		//   border: 2px solid $color-cerise-red;
+			box-shadow: none;
+		//	transition:0s;
+			
+		}
+		
+		&:focus{
+			
+		}
+	  
+	}
+	
+	
+  
+	&--1--trans{
+		color: $color-cerise-red;
+		background-color: white;
+		border:2px solid white;
+
+		
+		&:hover{
+			background-color: transparent;
+			color: white
+		}
+		
+		&:focus{
+			
+		}
+	  		
+	}
+	
+	&--1--trans--1 {
+		color: $color-cerise-red;
+		background-color: white;
+		border: 2px solid transparent;
+
+		
+		&:hover{
+			background-color: transparent;
+			color: $color-cerise-red;
+			border: 2px solid $color-cerise-red;
+		}
+		
+		&:focus{
+			
+		}
+	}
+  
+  
+	&--2--trans{
+		color: $color-dodger-blue;
+		background-color: white;
+		border:2px solid white;
+
+		
+		&:hover{
+			background-color: transparent;
+			color: white
+		}
+		
+		&:focus{
+			
+		}
+	  		
+	}
+  
+  
+  
+	//Variantes de tamaños
+	
+	&--xs{
+		font-size: 10px;
+		padding: 4px 5px;
+		height: $input-height-xs*1px;
+	}
+	
+	&--sm{
+		font-size: 12px;
+		padding: 5px 30px;
+		height: $input-height-sm*1px;
+	}
+	
+	&--lg{
+		font-size: 18px;
+		padding: 20px 18px;
+		height: $input-height-lg*1px;
+	}
+  
+}
+
+//Ajustes cuando el botón es un elemento diferente a button
+a.btn,
+label.btn,
+span.btn{
+	line-height: 240%;
+	&--xs{
+		line-height: 240%;
+	}
+	
+	&--sm{
+		line-height: 240%;
+	}
+	
+	&--lg{
+		line-height: 240%;
+	}
+	
+}
+
+
+//	--------------------------------------------------
+//	Button Groups
+//  --------------------------------------------------
+
+.btn-group{
+	
+	//Estado activo checkbox y radio
+	
+	.btn{
+		margin-right: $margin1;
+		margin-bottom: $margin1;
+		&:last-of-type{
+			margin-right: 0;
+		}
+		
+	}
+	
+	input:checked{
+	
+		&+ label{
+			
+			&.btn--1{
+				@extend .btn--1:hover;
+			}
+			
+			&.btn--2{
+				@extend .btn--1:hover;
+			}
+
+			&.btn--4{
+				@extend .btn--4:hover;
+				background: $color-cerise-red
+			}
+			&.btn--1--trans--1 {
+				@extend .btn--4:hover;
+				background: $color-cerise-red
+			}
+			
+			
+		}
+	
+	}
+	
+}
+	
+	
+	
+.icon-bar	{
+	width: 15px;
+	height: 2px;
+	background: #CCCCCC;
+	display: block;
+	margin-bottom: 2px;
+}
+
+//	--------------------------------------------------
+//	Switch
+//  --------------------------------------------------
+
+.btn-switch {
+    width: 60px;
+	&__label {
+	    height: 36px;
+	    padding: 0;
+	    line-height: 36px;
+	    border: 2px solid $color-text;
+	    border-radius: 36px;
+	    background-color: white;
+	    transition: background-color 0.3s ease-in;
+	}
+	&__label:before {
+	    width: 36px;
+	    margin: 0px;
+	    background: white;
+	    right: 22px;
+	    border: 2px solid $color-text;
+	    border-radius: 36px;
+	    transition: all 0.3s ease-in 0s; 
+	}
+	&__checkbox:checked + &__label {
+	    background-color: $color-success;
+	}
+	&__checkbox:checked + &__label, &__checkbox:checked + &__label:before {
+	   border-color: $color-success;
+	}
+    
+}

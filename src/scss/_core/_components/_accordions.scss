@@ -1,0 +1,89 @@
+/*doc
+---
+title: Accordion
+name: accordion
+category: Components Accordions
+---
+
+```html_example
+<div id="accordion-example" class="accordion">
+
+	<button id="collapse-button" type="button" data-toggle="collapse" data-target="#collapse" data-parent="accordion-example">
+		Empresas dedicadas a juegos de azar
+		<span class="caret"></span>
+	</button>
+	
+	<div id="collapse" class="collapse" role="tabpanel" aria-labelledby="collapse-button" aria-expanded="false">
+		
+		<div class="accordion__panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc purus, porttitor ac eros id, dignissim varius urna. Quisque non blandit est. Proin ultricies dapibus lorem, eget mollis arcu pulvinar eget. Etiam eget tincidunt eros. Duis et aliquam augue, ac commodo leo. In mattis accumsan magna et ultrices. Etiam elementum velit nec dui facilisis, nec consequat tortor tincidunt. Aenean mattis urna sapien, vel elementum nisi egestas ut. Curabitur pretium vel ante vitae tincidunt.</p>
+		</div>
+	</div>
+	
+	<button id="collapse-button-2" type="button" data-toggle="collapse" data-target="#collapse2" data-parent="accordion-example">								
+		Empresas bajo supervisión financiera
+		<span class="caret"></span>
+	</button>
+
+	<div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="collapse-button-2" aria-expanded="false">
+		<div class="accordion__panel">									
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc purus, porttitor ac eros id, dignissim varius urna. Quisque non blandit est. Proin ultricies dapibus lorem, eget mollis arcu pulvinar eget. Etiam eget tincidunt eros. Duis et aliquam augue, ac commodo leo. In mattis accumsan magna et ultrices. Etiam elementum velit nec dui facilisis, nec consequat tortor tincidunt. Aenean mattis urna sapien, vel elementum nisi egestas ut. Curabitur pretium vel ante vitae tincidunt.</p>
+		</div>
+	</div>
+	
+	<button id="collapse-button-3" type="button" data-toggle="collapse" data-target="#collapse3" data-parent="accordion-example">								
+		Personas con cargo público
+		<span class="caret"></span>
+	</button>
+
+	<div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="collapse-button-3" aria-expanded="false">
+		<div class="accordion__panel">									
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc purus, porttitor ac eros id, dignissim varius urna. Quisque non blandit est. Proin ultricies dapibus lorem, eget mollis arcu pulvinar eget. Etiam eget tincidunt eros. Duis et aliquam augue, ac commodo leo. In mattis accumsan magna et ultrices. Etiam elementum velit nec dui facilisis, nec consequat tortor tincidunt. Aenean mattis urna sapien, vel elementum nisi egestas ut. Curabitur pretium vel ante vitae tincidunt.</p>
+		</div>
+	</div>
+
+</div>
+```
+*/ 
+
+.accordion{
+
+	border-bottom: 0;
+	&:first-child{
+		border-top:1px solid $color-mercury;
+	}
+	[data-toggle="collapse"]{
+		position: relative;
+		display: block;
+		width: 100%;
+		margin: 0;
+		border: 0;
+		font-size: inherit;
+		outline: none;
+		&:active{
+			color: inherit;
+		}
+		
+	}		
+	.caret{
+		position: absolute;
+		top:0;
+		bottom: 0;
+		margin: auto;
+		transition: 200ms;
+	}
+	[aria-expanded="true"],
+	&__open{
+		.caret{
+			transform: rotate(180deg);
+			transition: 200ms;
+		}
+		.icon {
+			transform: rotate(180deg);
+			transition: 200ms;
+			
+		}		
+		
+	}
+	
+}

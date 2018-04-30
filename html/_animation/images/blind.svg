@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1453px" height="1273px" viewBox="0 0 1453 1273" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>blind</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 L0,1272.45 L530.547,1272.45 C546.512,1272.427 562.614,1272.415 578.818,1272.382 C615,1272.45 650,1264.45 684,1250.45 C768,1215.45 857,1166.45 950,1201.45 C1016,1225.45 1075,1269.45 1147.454,1272.327 C1161.185,1272.445 1174.627,1272.45 1187.726,1272.45 L1453,1272.45 L1453,0 L0,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="blind">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <polygon id="Fill-1" fill="#25315C" mask="url(#mask-2)" points="-5 1277.45 1458 1277.45 1458 -5 -5 -5"></polygon>
+        </g>
+    </g>
+</svg>

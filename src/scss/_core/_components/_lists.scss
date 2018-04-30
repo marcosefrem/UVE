@@ -1,0 +1,128 @@
+/*doc
+---
+title: Lists
+name: lists
+category: Components Lists
+---
+
+```html_example
+<ul class="list">
+	<li>Item</li>
+	<li>Item</li>	
+</ul>
+```
+
+
+Con bullets
+
+```html_example
+<ul class="list list--bullets">
+	<li>Item</li>
+	<li>Item</li>	
+</ul>
+```
+Con iconos
+
+```html_example
+<ul class="list list--icons list--icons--xs">
+    <li>
+        <div class="text">
+            <svg class="icon icon--xs"><use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use></svg>
+            Lorem ipsum dolor sit amet
+        </div>
+    </li>
+</ul>
+<ul class="list list--icons list--icons--sm">
+    <li>
+        <div class="text">
+            <svg class="icon icon--sm"><use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use></svg>
+            Lorem ipsum dolor sit amet
+        </div>
+    </li>
+</ul>
+<ul class="list list--icons list--icons--md">
+    <li>
+        <div class="text">
+            <svg class="icon icon--md"><use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use></svg>
+            Lorem ipsum dolor sit amet
+        </div>
+    </li>
+</ul>
+<ul class="list list--icons list--icons--lg">
+    <li>
+        <div class="text">
+            <svg class="icon icon--md"><use xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#twitter"></use></svg>
+            Lorem ipsum dolor sit amet
+        </div>
+    </li>
+</ul>
+```
+*/ 
+.list{
+		
+	li{
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	
+	//Con bullets
+	&--bullets{
+		
+		li{
+			position: relative;
+		}
+		& li:before{
+			content: '';
+			position: absolute;
+			left: 0;
+		}
+		
+		
+	}
+	
+	//Con iconos
+	&--icons{
+		
+		> * {display: table; position: relative }
+		
+		&--lg > *{
+			padding-left: $icon-lg*3/6*1px; min-height:$icon-lg/2*1px; 
+			.icon{
+				@extend .icon--lg;
+			}
+		}
+		&--md > *{
+			padding-left: $icon-md*3/2*1px; min-height:$icon-md*1px;
+			.icon{
+				@extend .icon--md
+			}
+		}
+		&--sm > *{
+			padding-left: $icon-sm*3/2*1px; min-height:$icon-sm*1px;
+			.icon{
+				@extend .icon--sm
+			}
+		}
+		&--xs > *{
+			padding-left: $icon-xs*3/2*1px; min-height:$icon-xs*1px;
+			.icon{
+				@extend .icon--xs
+			}
+		}
+		
+		> * > div.text{ display: table-cell; vertical-align: middle }
+		.icon { position: absolute; left: 0; top: 0; text-align: center }
+		
+	}
+	
+	
+	&--inline{
+		display: inline-block;
+		li{
+			display: inline-block;
+			margin-bottom: 0
+		}
+	}
+	
+}

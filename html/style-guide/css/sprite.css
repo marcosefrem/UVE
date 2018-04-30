@@ -1,0 +1,18 @@
+.svg-car {
+	background: url("svg/sprite.css-1dbd8c67.svg") 0 0 no-repeat;
+}
+
+.svg-car-dims {
+	width: 32px;
+	height: 27px;
+}
+
+.svg-twitter {
+	background: url("svg/sprite.css-1dbd8c67.svg") 100% 0 no-repeat;
+}
+
+.svg-twitter-dims {
+	width: 16px;
+	height: 13px;
+}
+

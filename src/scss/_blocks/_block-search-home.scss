@@ -1,0 +1,102 @@
+/*doc
+---
+title: Block Example
+name: block-example
+category: Blocks
+---
+
+Descripción bloque y su uso si tiene algún modificador, JS, etc
+
+```html_example
+
+HTML
+
+```
+
+```
+
+Código include
+
+
+```
+
+*/ 
+
+
+.block-search-home	{
+	margin-top: -235px;
+	background: $color-white;
+	position: relative;
+	border-radius: 6px;
+	padding: 20px;
+	
+	label{
+		font-size: 11px;
+		display: block;
+		margin-bottom: 10px;
+	}
+	input,
+	input[type="text"]{
+		border:0;
+		border-bottom: 1px solid $color-grey;
+		width: 100%;
+		&:focus{
+			border-bottom: 2px solid $color-primary;
+			color: $color-primary;
+		}
+	}
+	[class*="col"]{
+		position: relative;
+	}
+	.drop-container{
+	    max-height: 300px;
+	    overflow: hidden;
+	    display: block;
+	    width: calc(100% - 30px);
+
+	    box-sizing: border-box;	
+	    position: absolute;
+	}
+	.dropdown{
+		border-top:2px solid $color-primary;
+		padding: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+		background: $color-white;
+		box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.05);
+		width:100%;
+		margin-top: 15px;
+		li{
+			padding: 10px;
+			margin-left: -10px;
+			margin-right: -10px;
+			cursor: pointer;
+			font-size: 1.2rem;
+			&:hover{
+				background: $color-primary-soft;
+			}
+		}
+		&:before{
+			content: "";
+			width: 0;
+			height: 0;
+			border: 0 solid transparent;
+			border-right-width: 10px;
+			border-left-width: 10px;
+			border-bottom: 10px solid $color-primary;			
+			position: absolute;
+			display: block;
+			margin: auto;
+			top:-10px;
+			left: 0;
+			right: 0;
+			font-size: 11px;
+		}
+	}
+
+
+}
+
+
+
+

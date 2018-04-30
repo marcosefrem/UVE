@@ -1,0 +1,68 @@
+/*doc
+---
+title: Tabs
+name: tabs
+category: Components Tabs
+---
+	
+Pestañas
+
+```html_example
+
+<ul class="nav nav--tabs" role="tablist">
+	<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Tab 1</a></li>
+	<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Tab 2</a></li>
+	<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Tab 3</a></li>
+	<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Tab 4</a></li>
+</ul>
+
+<div class="tab-content">
+	<div role="tabpanel" class="tab-content__panel active" id="home">Tab 1 Content</div>
+	<div role="tabpanel" class="tab-content__panel" id="profile">Tab 2 Content</div>
+	<div role="tabpanel" class="tab-content__panel" id="messages">Tab 3 Content</div>
+	<div role="tabpanel" class="tab-content__panel" id="settings">Tab 4 Content</div>
+</div>
+
+```
+*/ 
+
+.nav--tabs {
+	@include clearfix;
+	
+	> li{
+		float: left;
+		margin-bottom: -1px;
+		margin-right: -1px;
+		
+		> a{
+			text-decoration: none;
+			display: inline-block;
+		}
+		
+		&.active{
+			
+			> a{
+
+				&:hover{
+					
+					
+				}
+			}
+			 
+		}
+	}
+	
+	
+}
+
+
+.tab-content {
+  > .tab-content__panel {
+    display: none;
+    visibility: hidden;
+  }
+  > .active {
+    display: block;
+    visibility: visible;
+  }
+}

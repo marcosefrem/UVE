@@ -1,0 +1,74 @@
+/*doc
+---
+title: Block Example
+name: block-example
+category: Blocks
+---
+
+Descripción bloque y su uso si tiene algún modificador, JS, etc
+
+```html_example
+
+HTML
+
+```
+
+```
+
+Código include
+
+
+```
+
+*/ 
+
+
+.block-card{
+	
+	text-align: center;
+	
+	@media (max-width: $screen-xs-max) {
+		font-size:1.6rem;
+		padding-bottom: 50px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	[class*="icon-"]{
+		width:220px;
+		height: 220px;
+		display:block;
+		margin:auto;
+		margin-bottom:40px;
+		svg{
+			width: 100%;
+			max-height: 170px;
+		}
+		@media (max-width: $screen-xs-max) {
+			width:160px;
+			height: 160px;
+			
+
+		}
+	}
+	.h3{
+		font-size: 2.4rem;
+		margin-bottom: 30px;
+		color:$color-black;
+		@media (max-width: $screen-xs-max) {
+			font-size:1.6rem;
+			margin-bottom: 15px;
+		}
+	}
+	p{
+		color:$color-grey;
+		font-size: 2rem;
+		line-height: 24px;
+		@media (max-width: $screen-xs-max) {
+			font-size: 1.3rem;
+			line-height:18px;
+		}
+
+	}
+
+}

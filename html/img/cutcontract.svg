@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="207px" height="204px" viewBox="0 0 207 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>cut contract</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-desktop" transform="translate(-176.000000, -1431.000000)">
+            <g id="screen2" transform="translate(0.000000, 1024.000000)">
+                <g id="text-hero" transform="translate(64.000000, 280.000000)">
+                    <g id="content2" transform="translate(0.000000, 124.000000)">
+                        <g id="illustrations" transform="translate(97.000000, 0.000000)">
+                            <g id="cut-contract" transform="translate(0.000000, 8.000000)">
+                                <g id="scissors-stroke" transform="translate(47.055650, 138.932262) rotate(43.000000) translate(-47.055650, -138.932262) translate(12.555650, 106.932262)" stroke="#00E29C">
+                                    <polygon id="Stroke-45" stroke-width="8" points="23.479338 24.6013973 23.9230725 28.8182661 37.1572337 27.1674722 39.3413772 22.6250484"></polygon>
+                                    <path d="M42.1805066,26.4911143 L62.6966154,23.9323471 C66.9187051,23.3868324 68.1268531,20.0724562 68.4273289,19.040984 C68.4273289,19.040984 44.6724725,21.9896133 44.3646501,21.9486906 L42.1805066,26.4911143 Z" id="Stroke-49" stroke-width="8"></path>
+                                    <path d="M48.1883705,4.03827026 L37.1666373,27.1727702 L42.1854655,26.517641 L54.7077413,0.148783378 C53.6009764,0.074610918 50.058447,0.187879207 48.1883705,4.03827026 Z" id="Stroke-53" stroke-width="8"></path>
+                                    <polygon id="Stroke-57" stroke-width="8" points="31.4935211 39.1185189 35.3747287 40.9129079 42.1853921 26.5176045 37.1665638 27.1727337"></polygon>
+                                    <circle id="Oval-2" stroke-width="9" cx="10" cy="24" r="10"></circle>
+                                    <circle id="Oval-2-Copy" stroke-width="9" cx="32" cy="54" r="10"></circle>
+                                </g>
+                                <g id="contract-fill" opacity="0.5" transform="translate(89.000000, 2.000000)" fill="#FFD800" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="9">
+                                    <path d="M128,31 C117.622203,31 111.13754,30.7031091 88,31 C88,13.0550044 96.948836,0 107.996109,0 C119.043382,0 128,13.8780467 128,31 Z" id="Stroke-1"></path>
+                                    <path d="M28.9534859,0.00159999999 L26.8063908,0.0016 C0,1.85521631 0,34.2586667 0,34.2586667 L0,138 L20.9545557,119.482667 L43.2735567,138 L66.0911566,119.482667 L87.3352214,138 L87.3352214,30.7972058 C87.3924904,12.9599149 96.6186598,0.0016 108,0.000590663756 L29.3027014,0.0016 C29.1836287,-5.22260186e-16 29.0683296,0.000534741773 28.9534859,0.00159999999 Z" id="Stroke-3"></path>
+                                    <path d="M87.3399963,163.998833 L87.3399963,192 L0,192 L0,163.999409 L20.9556879,145.482076 L43.2758947,163.999409 L66.0947274,145.482076 L87.3399399,163.999409 Z" id="Combined-Shape"></path>
+                                    <path d="M20,26 L68,26" id="Stroke-5"></path>
+                                    <path d="M20,48 L68,48" id="Stroke-7"></path>
+                                    <path d="M20,70 L68,70" id="Stroke-9"></path>
+                                    <path d="M20,95 L68,95" id="Stroke-11"></path>
+                                </g>
+                                <g id="contract-stroke" transform="translate(85.000000, 0.000000)" stroke="#FEA200" stroke-linecap="round" stroke-linejoin="round" stroke-width="9">
+                                    <path d="M128,31 C117.622203,31 111.13754,30.7031091 88,31 C88,13.0550044 96.948836,0 107.996109,0 C119.043382,0 128,13.8780467 128,31 Z" id="Stroke-1"></path>
+                                    <path d="M28.9534859,0.00159999999 L26.8063908,0.0016 C0,1.85521631 0,34.2586667 0,34.2586667 L0,138 L20.9545557,119.482667 L43.2735567,138 L66.0911566,119.482667 L87.3352214,138 L87.3352214,30.7972058 C87.3924904,12.9599149 96.6186598,0.0016 108,0.000590663756 L29.3027014,0.0016 C29.1836287,-5.22260186e-16 29.0683296,0.000534741773 28.9534859,0.00159999999 Z" id="Stroke-3"></path>
+                                    <path d="M87.3399963,163.998833 L87.3399963,192 L0,192 L0,163.999409 L20.9556879,145.482076 L43.2758947,163.999409 L66.0947274,145.482076 L87.3399399,163.999409 Z" id="Combined-Shape"></path>
+                                    <path d="M20,26 L68,26" id="Stroke-5"></path>
+                                    <path d="M20,48 L68,48" id="Stroke-7"></path>
+                                    <path d="M20,70 L68,70" id="Stroke-9"></path>
+                                    <path d="M20,95 L68,95" id="Stroke-11"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

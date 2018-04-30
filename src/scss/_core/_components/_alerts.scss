@@ -1,0 +1,52 @@
+/*doc
+---
+title: Alerts
+name: alerts
+category: Components Alerts
+---
+
+Alertas y mensajes de error
+
+```html_example
+<div class="alert alert--success" role="alert">
+	  <button type="button" class="alert__close" data-dismiss="alert" aria-hidden="true">×</button>
+	  Texto
+</div>
+<div class="alert alert--info" role="alert">
+	  <button type="button" class="alert__close" data-dismiss="alert" aria-hidden="true">×</button>
+	  Texto
+</div>
+<div class="alert alert--warning" role="alert">
+	  <button type="button" class="alert__close" data-dismiss="alert" aria-hidden="true">×</button>
+	  Texto
+</div>
+<div class="alert alert--danger" role="alert">
+	  <button type="button" class="alert__close" data-dismiss="alert" aria-hidden="true">×</button>
+	  Texto
+</div>
+
+```
+*/ 
+
+.alert {
+	position: relative;
+	a {
+		font-weight: bold;
+	}
+	
+	// Evitamos margens y padings que descuadren
+	*:last-child{
+	  margin-bottom: 0;
+	  padding-bottom: 0;
+	}
+	
+	&__close{
+		position: relative;
+		float: right;
+		background: none;
+		border: 0px;
+		padding: 0;
+		margin: 0;
+	}
+		
+}
