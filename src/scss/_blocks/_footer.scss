@@ -64,6 +64,16 @@ footer{
 			
 			img{
 				width: 80px;
+				
+				@media (max-width: $screen-md-max) {
+					width: 70px;
+				}				
+				@media (max-width: $screen-sm-max) {
+					width: 50px;
+				}
+				@media (max-width: $screen-xs-max) {
+					width: 80px;
+				}									
 			}
 		}
 	}

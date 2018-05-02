@@ -44,6 +44,12 @@ Código include
 			width: 100%;
 			max-height: 170px;
 		}
+		@media (max-width: $screen-sm-max) {
+			width:140px;
+			height: 140px;
+			
+		}
+
 		@media (max-width: $screen-xs-max) {
 			width:160px;
 			height: 160px;
@@ -55,6 +61,9 @@ Código include
 		font-size: 2.4rem;
 		margin-bottom: 30px;
 		color:$color-black;
+		@media (max-width: $screen-sm-max) {
+			height: 40px;
+		}		
 		@media (max-width: $screen-xs-max) {
 			font-size:1.6rem;
 			margin-bottom: 15px;
@@ -64,6 +73,10 @@ Código include
 		color:$color-grey;
 		font-size: 2rem;
 		line-height: 24px;
+		@media (max-width: $screen-sm-max) {
+			font-size: 1.6rem;
+			line-height:18px;
+		}
 		@media (max-width: $screen-xs-max) {
 			font-size: 1.3rem;
 			line-height:18px;

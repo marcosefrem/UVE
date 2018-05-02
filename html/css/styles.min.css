@@ -8143,7 +8143,10 @@ col-xl < 1440px
   padding-right: 15px;
   min-height: 1px; }
 
-@media (max-width: 991px) {
+@media (min-width: 991px) {
+  .col-sm-6 {
+    width: 50%; } }
+@media (max-width: 767px) {
   .col-xs-4 {
     width: 33.333333%; }
 
@@ -11949,6 +11952,15 @@ footer {
           margin-bottom: 20px; } }
       footer ul.logos li img {
         width: 80px; }
+        @media (max-width: 1199px) {
+          footer ul.logos li img {
+            width: 70px; } }
+        @media (max-width: 991px) {
+          footer ul.logos li img {
+            width: 50px; } }
+        @media (max-width: 767px) {
+          footer ul.logos li img {
+            width: 80px; } }
 
 .header {
   width: 100%;
@@ -11966,7 +11978,8 @@ footer {
       top: 0;
       bottom: 0;
       display: block;
-      margin: auto; }
+      margin: auto;
+      border: 0; }
     .header .navbar-spy li {
       margin-bottom: 8px;
       display: block; }
@@ -12159,7 +12172,8 @@ Código include
 
 */
 main {
-  clear: both; }
+  clear: both;
+  overflow-x: hidden; }
 
 .slick-dots li button {
   opacity: 1;
@@ -12355,6 +12369,10 @@ Código include
     .block-card [class*="icon-"] svg {
       width: 100%;
       max-height: 170px; }
+    @media (max-width: 991px) {
+      .block-card [class*="icon-"] {
+        width: 140px;
+        height: 140px; } }
     @media (max-width: 767px) {
       .block-card [class*="icon-"] {
         width: 160px;
@@ -12363,6 +12381,9 @@ Código include
     font-size: 2.4rem;
     margin-bottom: 30px;
     color: #202020; }
+    @media (max-width: 991px) {
+      .block-card .h3 {
+        height: 40px; } }
     @media (max-width: 767px) {
       .block-card .h3 {
         font-size: 1.6rem;
@@ -12371,6 +12392,10 @@ Código include
     color: #9D9D9D;
     font-size: 2rem;
     line-height: 24px; }
+    @media (max-width: 991px) {
+      .block-card p {
+        font-size: 1.6rem;
+        line-height: 18px; } }
     @media (max-width: 767px) {
       .block-card p {
         font-size: 1.3rem;
@@ -12609,7 +12634,8 @@ section {
         border-radius: 0;
         width: 100%;
         margin-bottom: 15px;
-        height: 55px; }
+        height: 55px;
+        padding: 5px; }
       section.contact .box-form textarea {
         border: 1px solid #69716E;
         /* placeholder text: */
@@ -12803,7 +12829,8 @@ section {
         border-radius: 0;
         width: 100%;
         margin-bottom: 15px;
-        height: 55px; }
+        height: 55px;
+        padding: 5px; }
       section.contact .box-form textarea {
         border: 1px solid #69716E;
         /* placeholder text: */

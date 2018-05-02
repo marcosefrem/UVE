@@ -112,9 +112,16 @@ col-xl < 1440px
   padding-right: $grid-gutter/2;
   min-height: 1px;
 }
+@media (min-width: $screen-sm-max) {
 
+	.col-sm-6{
 
-@media (max-width: $screen-sm-max) {
+		width: 50%;
+	}
+
+}
+
+@media (max-width: $screen-xs-max) {
 	.col-xs-4{
 
 		width: 33.333333%;
